@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container registration-container">
+        <form action="get">
+            <div class="get">
+                <div class="reg"><h2>REGISTRATION FORM</h2></div>
+                <label for="firstname">First Name</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="othername">Other Names</label>
+                <input type="text" name="name" id="othername" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" name="phoneNumber" id="phoneNumber" required>
+
+                <label for="course">Course</label>
+                <input type="text" name="course" id="course" required>
+            </div>    
+            
+            <div class="terms">
+                <input type="checkbox" name="course" id="terms" required>
+                <label for="terms">Accept the terms ans policies</label>
+            </div>
+            <br>
+            <label for="fitness">Are you fit for this Test?</label>
+            <div class="terms">
+                <input type="radio" name="fitness" id="Yes" value="fitness" required>
+                <label for="Yes">Yes</label>
+                <input type="radio" name="fitness" id="No" value="fitness" required>
+                <label for="No">No</label>
+            </div>
+            <br>
+            <label for="gender">Gender</label>
+            <div class="gender">
+                <input type="radio" name="gender" id="male" value="gender" required>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="gender" required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="others" value="gender" required>
+                <label for="others">Others</label>
+            </div>
+
+            <center><button type="submit">Submit</button></center>
+        </form>
+    </div>
+</body>
+</html>

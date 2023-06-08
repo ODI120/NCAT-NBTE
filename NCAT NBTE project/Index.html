@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styling.css">
+    
+    <title>NCAT-NBTE Courses</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico.png">
+</head>
+<body>
+<section>
+    <nav>
+        <div class="container container__navbar">
+            <!-- <h3>LOGO</h3> -->
+            <!-- <a href="IT.html"><h2>LOGO</h2></a> -->
+            <a href="Index.html"><img src="NCAT LOGO-1.png" class="logo"></a>
+            <ul  class="navbar-menu nav-link">
+                <li class="nav-item"><a href="Index.html" class="active">Home</a></li>
+                <li class="nav-item"><a href="programs.html">Programs</a></li>
+                <li class="nav-item"><a href="#">Contacts</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+    </nav>
+
+    <ul  class="dropdown_menu">
+        <li class="nav-item"><a href="Index.html" class="active">Home</a></li>
+        <li class="nav-item"><a href="programs.html">Programs</a></li>
+        <li class="nav-item"><a href="#">Contacts</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+    </ul>
+
+    <div class="main_page">
+    <div class="container container__header">
+            <div class="left_header">
+                <h1>WELCOME TO NCAT NBTE, <a href="programs.html" class="hyper">PROGRAM</a> PORTAL</h1>
+
+                <h3>"Transform Your Passion into a Thriving Career.</h3>
+                <p>
+                    At NCAT, we believe in transforming your passion for aviation 
+                    into a fulfilling and rewarding career. Whether you aspire to become a pilot, 
+                    aircraft maintenance engineer, air traffic controller, or aviation manager, 
+                    our diverse range of programscaters to all aviation disciplines. 
+                    <!-- Through our rigorous curriculum and hands-on training, you will gain practical 
+                    expertise and industry-relevant knowledge, preparing you for success in the dynamic
+                     aviation sector. -->
+                </p>
+                <span><a class="btn btn-primary" href="programs.html" ><b>Join Us</b></a></span>
+            </div>
+
+            <div class="right_header">
+                <img src="plane-png.png" alt="">
+            </div>
+    </div>
+
+    <div class="crossfade">
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+    </div>
+
+    </div>
+</section>
+
+<script src="Javascript.js"></script>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function() {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleIcon.classList = isOpen
+        ? 'bi bi-x'
+        : 'bi bi-list'
+    }
+</script>
+</body>
+</html>
